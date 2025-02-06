@@ -1,12 +1,11 @@
 import { Route, Routes } from "react-router-dom"
 import OverviewPage from "./Pages/OverviewPage"
 import ProductsPage from "./Pages/ProductsPage"
-import { Users } from "lucide-react"
 import Sales from "./Pages/Sales"
 import Orders from "./Pages/Orders"
-import Analytics from "./Pages/Analytics"
-import Sattings from "./Pages/Sattings"
 import Sidebar from "./Components/Sidebar"
+import UsersPage from "./Pages/UsersPage"
+import AnalyticsPage from "./Pages/AnalyticsPage"
 
 
 function App() {
@@ -23,11 +22,10 @@ function App() {
       <Routes>
         <Route path="/" element={<OverviewPage></OverviewPage>}/>
         <Route path="/products" element={<ProductsPage></ProductsPage>}/>
-        <Route path="/users" element={<Users></Users>}/>
+        <Route path="/users" element={<UsersPage></UsersPage>}/>
         <Route path="/sales" element={<Sales></Sales>}/>
         <Route path="/orders" element={<Orders></Orders>}/>
-        <Route path="/analytics" element={<Analytics></Analytics>}/>
-        <Route path="/settings" element={<Sattings></Sattings>}/>
+        <Route path="/analytics" element={<AnalyticsPage></AnalyticsPage>}/>
       </Routes>
     </div>
   )
